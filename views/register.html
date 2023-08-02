@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/img/css/style.css">
+
+</head>
+
+<body>
+   
+    <header>
+        <div class="nav__bar">
+
+
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo mercado liebre" width="250px">
+            <form class="buscador">
+                <input type="text" name="q" placeholder="buscar productos, marcas">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+
+
+            <div class="comprar-cuotas">
+                <h2 class="compra__cuotas"> <i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin
+                    tarjetas de
+                    credito</h2>
+            </div>
+
+            <div class="burger-menu">
+                <button class="btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="nav__ul">
+                    <li>
+                        <a href="#">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="#">Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="#">Vender</a>
+                    </li>
+                    <li>
+                        <a href="#">Ayuda</a>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <div class="nav__ul__dos">
+                    <li>
+                        <a href="/register">Crea a tu cuenta <i class="fa-regular fa-address-card"></i></a>
+                    </li>
+                    <li>
+                        <a href="/login">Ingresa <i class="fa-solid fa-door-open"></i></a>
+                    </li>
+                    <li>
+                        <a href="/carrito">Mis compras <i class="fa-solid fa-bag-shopping"></i></a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- FORMULARIO -->
+    <section class="formulario">
+        <form action="/home" method="get" class="form">
+
+            <div class="datos__personales todos__divs">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="datos__personales todos__divs">
+                <label for="user">Nombre de Usuario</label>
+                <input type="text" id="user" name="user" required>
+            </div>
+            <div class="datos__personales todos__divs">
+                <label for="fecha__nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="fecha__nacimiento" id="fecha__nacimiento" required>
+            </div>
+            <div class="datos__personales todos__divs">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </div>
+            <div class="datos__personales__ todos__divss">
+                <div>
+                    <label for="perfil__usuario">Que es lo que quieres hacer</label>
+                </div>
+                <div>
+                    <input type="radio" name="nombreDelGrupo" value="Vender" id="opcion1">
+                    <label for="opcion1">Vender</label>
+
+                    <input type="radio" name="nombreDelGrupo" value="Comprar" id="opcion2">
+                    <label for="opcion2">Comprar</label>
+                </div>
+            </div>
+
+            <div class="intereses todos__divss">
+                <label for="">Intereses :</label>
+                <div class="intereses__opciones todos__divss">
+                    <div class="todos__divss">
+                        <input type="checkbox" name="nombreDelCheckbox" value="Electro" id="opcion1">
+                        <label for="opcion1">Electro</label>
+                    </div>
+                    <div class="todos__divss">
+                        <input type="checkbox" name="nombreDelCheckbox" value="Moda" id="opcion2">
+                        <label for="opcion2">Moda</label>
+                    </div>
+                    <div class="todos__divss">
+                        <input type="checkbox" name="nombreDelCheckbox" value="Hogar" id="opcion3">
+                        <label for="opcion3">Hogar</label>
+                    </div>
+                    <div class="todos__divss">
+                        <input type="checkbox" name="nombreDelCheckbox" value="Jugueteria" id="opcion4">
+                        <label for="opcion4">Jugueteria</label>
+                    </div>
+                    <div class="todos__divss">
+                        <input type="checkbox" name="nombreDelCheckbox" value="Vida Sana" id="opcion5">
+                        <label for="opcion5">Vida sana</label>
+                    </div>
+                </div>
+            </div>
+            <div class="foto__user todos__divs">
+                <label for="foto">Selecciona una foto de usuario : </label>
+                <div class="foto__user__inputs todos__divs">
+                    <input type="file" id="foto" name="foto" accept="image/*">
+
+                </div>
+            </div>
+            <div class="contraseña todos__divs">
+                <label for="contraseña">Introduzca una constraseña: </label>
+                <input type="password" name="contraseña" id="contraseña" required>
+            </div>
+            <div class="confirmar__contraseña todos__divs">
+                <label for="confirmar__contraseña">Confirmar contraseña </label>
+                <input type="password" name="confirmar__contraseña" id="confirmar__contraseña" required>
+            </div>
+            <div class="btns">
+                <input type="submit" value="Enviar" class="input__btn">
+                <input type="reset" value="Borrar" class="input__btn">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <section class="pie-de-pagina">
+            <div class="tarjeta-efectivo">
+                <i class="fa-solid fa-credit-card logos-azules"></i>
+                <h2>Paga con tarjeta o en efectivo</h2>
+                <p>Con Mercado Liebre tenes cuotas sin interes con tarjeta o efectivo en puntos de pago !Y siempre
+                    segurto!</p>
+            </div>
+            <div class="tarjeta-efectivo">
+                <i class="fa-solid fa-gift logos-azules"></i>
+                <h2>Envio gratis desde los $2500</h2>
+                <p>Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos.Es un beneficio
+                    de MercadoPuntos</p>
+            </div>
+            <div class="tarjeta-efectivo">
+                <i class="fa-solid fa-user-shield logos-azules"></i>
+                <h2>Seguridad de principio a fin</h2>
+                <p>No te gusta? Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
+                    protegido</p>
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>
